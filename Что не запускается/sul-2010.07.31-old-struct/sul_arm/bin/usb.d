@@ -1,0 +1,16 @@
+.\bin\usb.o: usb\usb.c
+.\bin\usb.o: .\board\board.h
+.\bin\usb.o: .\board\chip.h
+.\bin\usb.o: .\board\AT91SAM3U4.h
+.\bin\usb.o: .\peripherals\irq\irq.h
+.\bin\usb.o: .\board\exceptions.h
+.\bin\usb.o: .\exchange.h
+.\bin\usb.o: .\peripherals\led\led.h
+.\bin\usb.o: .\peripherals\ssc\ssc.h
+.\bin\usb.o: .\peripherals\usart\usart.h
+.\bin\usb.o: .\peripherals\pmc\pmc.h
+.\bin\usb.o: .\peripherals\pio\pio.h
+.\bin\usb.o: .\board\board.h
+.\bin\usb.o: .\peripherals\smc\smc.h
+.\bin\usb.o: .\peripherals\dbgu\dbgu.h
+.\bin\usb.o: usb\usb.h

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>784</width>
+    <height>317</height>
+   </rect>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::PreventContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Монитор СУЛ</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0" colspan="2">
+     <widget class="QGroupBox" name="groupBox_11">
+      <property name="title">
+       <string>Параметры импульсов сброса и установки фазы</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="spacing">
+          <number>5</number>
+         </property>
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>Масштаб</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_15">
+           <property name="text">
+            <string>Сброс, мкс</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="label_21">
+           <property name="text">
+            <string>Пауза, мкс</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QSpinBox" name="spbPauseDuration">
+           <property name="minimum">
+            <number>5</number>
+           </property>
+           <property name="maximum">
+            <number>20</number>
+           </property>
+           <property name="value">
+            <number>20</number>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QSpinBox" name="spbResetDuration">
+           <property name="minimum">
+            <number>25</number>
+           </property>
+           <property name="maximum">
+            <number>50</number>
+           </property>
+           <property name="value">
+            <number>40</number>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QSpinBox" name="spbScaleValue">
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>20</number>
+           </property>
+           <property name="value">
+            <number>6</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="2" rowspan="3">
+     <widget class="QPlainTextEdit" name="plainTextEdit">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>Параметры контроля каналов системы</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="1" column="0">
+          <widget class="QSpinBox" name="spbTopLevel">
+           <property name="maximum">
+            <number>255</number>
+           </property>
+           <property name="value">
+            <number>80</number>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QSpinBox" name="spbLowLevel">
+           <property name="minimum">
+            <number>0</number>
+           </property>
+           <property name="maximum">
+            <number>255</number>
+           </property>
+           <property name="value">
+            <number>60</number>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" colspan="2">
+          <widget class="QLabel" name="label_14">
+           <property name="text">
+            <string>Диапазон границ при контроле каналов</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QGroupBox" name="groupBox_18">
+      <property name="title">
+       <string>Литера</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Номер литеры</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="cbZone"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string>Инициализация системы</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_8">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="1">
+          <widget class="QPushButton" name="btnSetScaleFlash">
+           <property name="text">
+            <string>FLASH</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="btnSetScaleRam">
+           <property name="text">
+            <string>RAM</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QPushButton" name="btnOpenSulConfig">
+           <property name="text">
+            <string>Выбор СУЛ</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="btnAutoConfig">
+           <property name="text">
+            <string>Авто</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>784</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Система</string>
+    </property>
+    <widget class="QMenu" name="menu_4">
+     <property name="title">
+      <string>Настройка</string>
+     </property>
+     <addaction name="actEEPROM"/>
+     <addaction name="separator"/>
+     <addaction name="actRAM"/>
+     <addaction name="separator"/>
+     <addaction name="actTuneExt"/>
+     <addaction name="separator"/>
+    </widget>
+    <addaction name="actConfig"/>
+    <addaction name="separator"/>
+    <addaction name="actBeam"/>
+    <addaction name="separator"/>
+    <addaction name="menu_4"/>
+    <addaction name="separator"/>
+    <addaction name="actCheck"/>
+    <addaction name="separator"/>
+    <addaction name="actExit"/>
+    <addaction name="separator"/>
+    <addaction name="actDeleteObject"/>
+    <addaction name="separator"/>
+    <addaction name="actConsole"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Модули</string>
+    </property>
+    <widget class="QMenu" name="menu_7">
+     <property name="title">
+      <string>Активные модули</string>
+     </property>
+     <addaction name="action_8"/>
+     <addaction name="action_10"/>
+    </widget>
+    <addaction name="action"/>
+    <addaction name="menu_7"/>
+    <addaction name="actDebug"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Каналы</string>
+    </property>
+    <widget class="QMenu" name="menu_8">
+     <property name="title">
+      <string>Контроль</string>
+     </property>
+     <addaction name="action_14"/>
+     <addaction name="action_15"/>
+     <addaction name="action_16"/>
+     <addaction name="action_EEPROM"/>
+    </widget>
+    <addaction name="action_12"/>
+    <addaction name="menu_8"/>
+    <addaction name="action_18"/>
+   </widget>
+   <widget class="QMenu" name="menu_9">
+    <property name="title">
+     <string>Антенна</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_9"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actBeam">
+   <property name="text">
+    <string>Управление лучом</string>
+   </property>
+  </action>
+  <action name="actEEPROM">
+   <property name="text">
+    <string>Настройка EEPROM</string>
+   </property>
+  </action>
+  <action name="actRAM">
+   <property name="text">
+    <string>Настройка RAM</string>
+   </property>
+  </action>
+  <action name="actCheck">
+   <property name="text">
+    <string>Контроль</string>
+   </property>
+  </action>
+  <action name="actExit">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="text">
+    <string>Конфигурация</string>
+   </property>
+  </action>
+  <action name="actConfig">
+   <property name="text">
+    <string>Конфигурация</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>Информация</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>Контроль каналов</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>Контроль вычислителей</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="text">
+    <string>Контроль обмена</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>Информация</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="text">
+    <string>Контроль</string>
+   </property>
+  </action>
+  <action name="action_11">
+   <property name="text">
+    <string>Контроль</string>
+   </property>
+  </action>
+  <action name="action_12">
+   <property name="text">
+    <string>Информация</string>
+   </property>
+  </action>
+  <action name="action_14">
+   <property name="text">
+    <string>Контроль каналов</string>
+   </property>
+  </action>
+  <action name="action_15">
+   <property name="text">
+    <string>Контроль вычислителей</string>
+   </property>
+  </action>
+  <action name="action_16">
+   <property name="text">
+    <string>Контроль импульсов</string>
+   </property>
+  </action>
+  <action name="action_EEPROM">
+   <property name="text">
+    <string>Контроль PLM</string>
+   </property>
+  </action>
+  <action name="actDebug">
+   <property name="text">
+    <string>Отладка</string>
+   </property>
+  </action>
+  <action name="action_18">
+   <property name="text">
+    <string>Параметры</string>
+   </property>
+  </action>
+  <action name="actTuneExt">
+   <property name="text">
+    <string>Расширенная настройка</string>
+   </property>
+  </action>
+  <action name="actDeleteObject">
+   <property name="text">
+    <string>Удалить объекты</string>
+   </property>
+  </action>
+  <action name="actConsole">
+   <property name="text">
+    <string>Консоль</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

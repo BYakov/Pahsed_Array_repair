@@ -1,0 +1,16 @@
+.\bin\dispatch.o: dispatch.c
+.\bin\dispatch.o: .\board\board.h
+.\bin\dispatch.o: .\board\chip.h
+.\bin\dispatch.o: .\board\AT91SAM3U4.h
+.\bin\dispatch.o: .\peripherals\irq\irq.h
+.\bin\dispatch.o: .\board\exceptions.h
+.\bin\dispatch.o: .\exchange.h
+.\bin\dispatch.o: .\peripherals\led\led.h
+.\bin\dispatch.o: .\peripherals\ssc\ssc.h
+.\bin\dispatch.o: .\peripherals\usart\usart.h
+.\bin\dispatch.o: .\peripherals\pmc\pmc.h
+.\bin\dispatch.o: .\peripherals\pio\pio.h
+.\bin\dispatch.o: .\board\board.h
+.\bin\dispatch.o: .\peripherals\smc\smc.h
+.\bin\dispatch.o: .\peripherals\dbgu\dbgu.h
+.\bin\dispatch.o: dispatch.h

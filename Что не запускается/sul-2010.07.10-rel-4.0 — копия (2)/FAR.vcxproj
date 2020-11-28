@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{33D07C23-327D-4F63-BD46-EEB959B82C40}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="base_class\device.cpp" />
+    <ClCompile Include="base_class\fi0_config.cpp" />
+    <ClCompile Include="base_class\flash_config.cpp" />
+    <ClCompile Include="base_class\message.cpp" />
+    <ClCompile Include="base_class\ram_config.cpp" />
+    <ClCompile Include="base_class\sul_base.cpp" />
+    <ClCompile Include="base_class\sul_config.cpp" />
+    <ClCompile Include="sul_monitor\grid_array.cpp" />
+    <ClCompile Include="sul_monitor\main.cpp" />
+    <ClCompile Include="sul_monitor\monitor\debug\moc_sul_tune.cpp" />
+    <ClCompile Include="sul_monitor\monitor\release\moc_grid_array.cpp" />
+    <ClCompile Include="sul_monitor\monitor\release\moc_sul_analizer.cpp" />
+    <ClCompile Include="sul_monitor\monitor\release\moc_sul_graph.cpp" />
+    <ClCompile Include="sul_monitor\monitor\release\moc_sul_monitor.cpp" />
+    <ClCompile Include="sul_monitor\monitor\release\moc_sul_test.cpp" />
+    <ClCompile Include="sul_monitor\monitor\release\moc_sul_tune_widget.cpp" />
+    <ClCompile Include="sul_monitor\monitor\release\qrc_monitor.cpp" />
+    <ClCompile Include="sul_monitor\sul_analizer.cpp" />
+    <ClCompile Include="sul_monitor\sul_graph.cpp" />
+    <ClCompile Include="sul_monitor\sul_monitor.cpp" />
+    <ClCompile Include="sul_monitor\sul_test.cpp" />
+    <ClCompile Include="sul_monitor\sul_tune_widget.cpp" />
+    <ClCompile Include="sul_monitor\worker_thread.cpp" />
+    <ClCompile Include="sul_src\angle_correct.cpp" />
+    <ClCompile Include="sul_src\coordinate.cpp" />
+    <ClCompile Include="sul_src\packet485.cpp" />
+    <ClCompile Include="sul_src\scanner.cpp" />
+    <ClCompile Include="sul_src\serial.cpp" />
+    <ClCompile Include="sul_src\sul_avr.cpp" />
+    <ClCompile Include="sul_src\sul_create_config.cpp" />
+    <ClCompile Include="sul_src\sul_mdo.cpp" />
+    <ClCompile Include="sul_src\sul_tune.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="base_class\device.h" />
+    <ClInclude Include="base_class\fi0_config.h" />
+    <ClInclude Include="base_class\flash_config.h" />
+    <ClInclude Include="base_class\message.h" />
+    <ClInclude Include="base_class\process_type.h" />
+    <ClInclude Include="base_class\ram_config.h" />
+    <ClInclude Include="base_class\sul_base.h" />
+    <ClInclude Include="base_class\sul_config.h" />
+    <ClInclude Include="base_class\sul_data_types.h" />
+    <ClInclude Include="sul_monitor\grid_array.h" />
+    <ClInclude Include="sul_monitor\monitor\ui_sul_monitor.h" />
+    <ClInclude Include="sul_monitor\sul_analizer.h" />
+    <ClInclude Include="sul_monitor\sul_graph.h" />
+    <ClInclude Include="sul_monitor\sul_monitor.h" />
+    <ClInclude Include="sul_monitor\sul_test.h" />
+    <ClInclude Include="sul_monitor\sul_tune_widget.h" />
+    <ClInclude Include="sul_monitor\sul_worker.h" />
+    <ClInclude Include="sul_monitor\ui_sul_monitor.h" />
+    <ClInclude Include="sul_monitor\worker_thread.h" />
+    <ClInclude Include="sul_src\angle_correct.h" />
+    <ClInclude Include="sul_src\coordinate.h" />
+    <ClInclude Include="sul_src\packet485.h" />
+    <ClInclude Include="sul_src\scanner.h" />
+    <ClInclude Include="sul_src\serial.h" />
+    <ClInclude Include="sul_src\sul_avr.h" />
+    <ClInclude Include="sul_src\sul_create_config.h" />
+    <ClInclude Include="sul_src\sul_data_types.h" />
+    <ClInclude Include="sul_src\sul_error_codes.h" />
+    <ClInclude Include="sul_src\sul_mdo.h" />
+    <ClInclude Include="sul_src\sul_mdo_cmd.h" />
+    <ClInclude Include="sul_src\sul_tune.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

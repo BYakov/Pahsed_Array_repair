@@ -1,0 +1,17 @@
+.\bin\nvic.o: peripherals\irq\nvic.c
+.\bin\nvic.o: .\board\board.h
+.\bin\nvic.o: .\board\chip.h
+.\bin\nvic.o: .\board\AT91SAM3U4.h
+.\bin\nvic.o: .\peripherals\irq\irq.h
+.\bin\nvic.o: .\board\exceptions.h
+.\bin\nvic.o: .\exchange.h
+.\bin\nvic.o: .\peripherals\led\led.h
+.\bin\nvic.o: .\peripherals\ssc\ssc.h
+.\bin\nvic.o: .\peripherals\usart\usart.h
+.\bin\nvic.o: .\peripherals\pmc\pmc.h
+.\bin\nvic.o: .\peripherals\pio\pio.h
+.\bin\nvic.o: .\board\board.h
+.\bin\nvic.o: .\peripherals\smc\smc.h
+.\bin\nvic.o: .\peripherals\dbgu\dbgu.h
+.\bin\nvic.o: I:\Keil\ARM\RV31\INC\core_cm3.h
+.\bin\nvic.o: I:\Keil\ARM\RV31\INC\stdint.h

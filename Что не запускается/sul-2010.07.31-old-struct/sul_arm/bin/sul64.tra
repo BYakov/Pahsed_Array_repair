@@ -1,0 +1,37 @@
+*** Creating Trace Output File '.\bin\sul64.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\bin\board_cstartup_keil.o"'
+### List of Objects: adding '".\bin\board_lowlevel.o"'
+### List of Objects: adding '".\bin\exceptions.o"'
+### List of Objects: adding '".\bin\systick.o"'
+### List of Objects: adding '".\bin\usart.o"'
+### List of Objects: adding '".\bin\nvic.o"'
+### List of Objects: adding '".\bin\pio.o"'
+### List of Objects: adding '".\bin\pmc.o"'
+### List of Objects: adding '".\bin\led.o"'
+### List of Objects: adding '".\bin\ssc.o"'
+### List of Objects: adding '".\bin\smc.o"'
+### List of Objects: adding '".\bin\twi.o"'
+### List of Objects: adding '".\bin\tc.o"'
+### List of Objects: adding '".\bin\dispatch.o"'
+### List of Objects: adding '".\bin\exchange.o"'
+### List of Objects: adding '".\bin\main.o"'
+### List of Objects: adding '".\bin\core_cm3.o"'
+### List of Objects: adding '".\bin\math.o"'
+### List of Objects: adding '".\bin\adc12.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 ".\bin\board_cstartup_keil.o" ".\bin\board_lowlevel.o" ".\bin\exceptions.o" ".\bin\systick.o" ".\bin\usart.o" ".\bin\nvic.o" ".\bin\pio.o" ".\bin\pmc.o" ".\bin\led.o" ".\bin\ssc.o" ".\bin\smc.o" ".\bin\twi.o" ".\bin\tc.o" ".\bin\dispatch.o" ".\bin\exchange.o" ".\bin\main.o" ".\bin\core_cm3.o" ".\bin\math.o" ".\bin\adc12.o" --strict --scatter ".\board\sram.sct" 
+--entry resetHandler --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\sul64.map" -o ".\bin\sul64.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\bin\sul64.axf'
+### ADS-LD Command File: '.\bin\sul64.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\bin\sul64.lnp', Handle=0x000014BC
+### Writing '.lnp' file
+### ADS-LD Command file '.\bin\sul64.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

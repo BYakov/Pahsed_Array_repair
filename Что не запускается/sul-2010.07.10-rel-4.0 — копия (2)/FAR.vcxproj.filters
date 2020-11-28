@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="base_class\device.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base_class\fi0_config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base_class\flash_config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base_class\message.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base_class\ram_config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base_class\sul_base.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base_class\sul_config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_monitor\grid_array.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_monitor\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_monitor\sul_analizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_monitor\sul_graph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_monitor\sul_monitor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_monitor\sul_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_monitor\sul_tune_widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_monitor\worker_thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_monitor\monitor\debug\moc_sul_tune.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_monitor\monitor\release\moc_grid_array.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_monitor\monitor\release\moc_sul_analizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_monitor\monitor\release\moc_sul_graph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_monitor\monitor\release\moc_sul_monitor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_monitor\monitor\release\moc_sul_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_monitor\monitor\release\moc_sul_tune_widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_monitor\monitor\release\qrc_monitor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_src\angle_correct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_src\coordinate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_src\packet485.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_src\scanner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_src\serial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_src\sul_avr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_src\sul_create_config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_src\sul_mdo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sul_src\sul_tune.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="base_class\device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base_class\fi0_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base_class\flash_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base_class\message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base_class\process_type.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base_class\ram_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base_class\sul_base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base_class\sul_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base_class\sul_data_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sul_monitor\grid_array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sul_monitor\sul_analizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sul_monitor\sul_graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sul_monitor\sul_monitor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sul_monitor\sul_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sul_monitor\sul_tune_widget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sul_monitor\sul_worker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sul_monitor\worker_thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sul_monitor\monitor\ui_sul_monitor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sul_src\angle_correct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sul_src\coordinate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sul_src\packet485.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sul_src\scanner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sul_src\serial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sul_src\sul_avr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sul_src\sul_create_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sul_src\sul_data_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sul_src\sul_error_codes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sul_src\sul_mdo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sul_src\sul_mdo_cmd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sul_src\sul_tune.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sul_monitor\ui_sul_monitor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

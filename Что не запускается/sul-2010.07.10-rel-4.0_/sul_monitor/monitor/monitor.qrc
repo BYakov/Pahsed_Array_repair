@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/monitor">
+        <file alias="main_icon">monitor_icon.png</file>
+    </qresource>
+</RCC> 

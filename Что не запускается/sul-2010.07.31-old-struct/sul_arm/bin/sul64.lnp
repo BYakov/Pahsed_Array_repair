@@ -1,0 +1,4 @@
+--cpu Cortex-M3 ".\bin\board_cstartup_keil.o" ".\bin\board_lowlevel.o" ".\bin\exceptions.o" ".\bin\systick.o" ".\bin\usart.o" ".\bin\nvic.o" ".\bin\pio.o" ".\bin\pmc.o" ".\bin\led.o" ".\bin\ssc.o" ".\bin\smc.o" ".\bin\twi.o" ".\bin\tc.o" ".\bin\dispatch.o" ".\bin\exchange.o" ".\bin\main.o" ".\bin\core_cm3.o" ".\bin\math.o" ".\bin\adc12.o" --strict --scatter ".\board\sram.sct" 
+--entry resetHandler --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\sul64.map" -o ".\bin\sul64.axf"

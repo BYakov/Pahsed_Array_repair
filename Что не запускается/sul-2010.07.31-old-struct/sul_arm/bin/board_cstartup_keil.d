@@ -1,0 +1,17 @@
+.\bin\board_cstartup_keil.o: board\board_cstartup_keil.c
+.\bin\board_cstartup_keil.o: I:\Keil\ARM\RV31\INC\stdio.h
+.\bin\board_cstartup_keil.o: .\board\board.h
+.\bin\board_cstartup_keil.o: .\board\chip.h
+.\bin\board_cstartup_keil.o: .\board\AT91SAM3U4.h
+.\bin\board_cstartup_keil.o: .\peripherals\irq\irq.h
+.\bin\board_cstartup_keil.o: .\board\exceptions.h
+.\bin\board_cstartup_keil.o: .\exchange.h
+.\bin\board_cstartup_keil.o: .\peripherals\led\led.h
+.\bin\board_cstartup_keil.o: .\peripherals\ssc\ssc.h
+.\bin\board_cstartup_keil.o: .\peripherals\usart\usart.h
+.\bin\board_cstartup_keil.o: .\peripherals\pmc\pmc.h
+.\bin\board_cstartup_keil.o: .\peripherals\pio\pio.h
+.\bin\board_cstartup_keil.o: .\board\board.h
+.\bin\board_cstartup_keil.o: .\peripherals\smc\smc.h
+.\bin\board_cstartup_keil.o: .\peripherals\dbgu\dbgu.h
+.\bin\board_cstartup_keil.o: board\board_lowlevel.h

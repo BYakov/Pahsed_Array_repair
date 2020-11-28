@@ -1,0 +1,15 @@
+.\bin\pmc.o: peripherals\pmc\pmc.c
+.\bin\pmc.o: .\board\board.h
+.\bin\pmc.o: .\board\chip.h
+.\bin\pmc.o: .\board\AT91SAM3U4.h
+.\bin\pmc.o: .\peripherals\irq\irq.h
+.\bin\pmc.o: .\board\exceptions.h
+.\bin\pmc.o: .\exchange.h
+.\bin\pmc.o: .\peripherals\led\led.h
+.\bin\pmc.o: .\peripherals\ssc\ssc.h
+.\bin\pmc.o: .\peripherals\usart\usart.h
+.\bin\pmc.o: .\peripherals\pmc\pmc.h
+.\bin\pmc.o: .\peripherals\pio\pio.h
+.\bin\pmc.o: .\board\board.h
+.\bin\pmc.o: .\peripherals\smc\smc.h
+.\bin\pmc.o: .\peripherals\dbgu\dbgu.h

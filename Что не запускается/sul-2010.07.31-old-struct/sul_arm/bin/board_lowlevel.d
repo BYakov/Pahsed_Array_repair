@@ -1,0 +1,17 @@
+.\bin\board_lowlevel.o: board\board_lowlevel.c
+.\bin\board_lowlevel.o: .\board\board.h
+.\bin\board_lowlevel.o: .\board\chip.h
+.\bin\board_lowlevel.o: .\board\AT91SAM3U4.h
+.\bin\board_lowlevel.o: .\peripherals\irq\irq.h
+.\bin\board_lowlevel.o: .\board\exceptions.h
+.\bin\board_lowlevel.o: .\exchange.h
+.\bin\board_lowlevel.o: .\peripherals\led\led.h
+.\bin\board_lowlevel.o: .\peripherals\ssc\ssc.h
+.\bin\board_lowlevel.o: .\peripherals\usart\usart.h
+.\bin\board_lowlevel.o: .\peripherals\pmc\pmc.h
+.\bin\board_lowlevel.o: .\peripherals\pio\pio.h
+.\bin\board_lowlevel.o: .\board\board.h
+.\bin\board_lowlevel.o: .\peripherals\smc\smc.h
+.\bin\board_lowlevel.o: .\peripherals\dbgu\dbgu.h
+.\bin\board_lowlevel.o: board\board_memories.h
+.\bin\board_lowlevel.o: board\board_lowlevel.h

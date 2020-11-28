@@ -1,0 +1,17 @@
+.\bin\twi.o: peripherals\twi\twi.c
+.\bin\twi.o: .\board\board.h
+.\bin\twi.o: .\board\chip.h
+.\bin\twi.o: .\board\AT91SAM3U4.h
+.\bin\twi.o: .\peripherals\irq\irq.h
+.\bin\twi.o: .\board\exceptions.h
+.\bin\twi.o: .\exchange.h
+.\bin\twi.o: .\peripherals\led\led.h
+.\bin\twi.o: .\peripherals\ssc\ssc.h
+.\bin\twi.o: .\peripherals\usart\usart.h
+.\bin\twi.o: .\peripherals\pmc\pmc.h
+.\bin\twi.o: .\peripherals\pio\pio.h
+.\bin\twi.o: .\board\board.h
+.\bin\twi.o: .\peripherals\smc\smc.h
+.\bin\twi.o: .\peripherals\dbgu\dbgu.h
+.\bin\twi.o: peripherals\twi\twi.h
+.\bin\twi.o: .\utility/math.h
